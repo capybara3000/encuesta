@@ -157,6 +157,10 @@
       <div id="resultado"></div>
     </section>
 
+    <button onclick="traerEncuesta()">traer datos</button>
+
+    <div id="tablita"></div>
+
   </body>
   <script>
     let resultadoDeLaEncuesta =  async ()=> {
@@ -283,5 +287,17 @@
     //   }
     //   document.getElementById("resultado").innerHTML = resultado;
     // }
+
+     
+      traerEncuesta = async () => {
+        const response = await fetch(
+          "https://backendencuesta.onrender.com/resultados/"
+        );
+        resultadoDeLaEncuesta = await response.json();
+        console.log(resultadoDeLaEncuesta);
+
+        document.getElementById("tablita").innerHTML = "<p>"+ JSON.stringify(resultadoDeLaEncuesta) + "</p>"
+      };
+
   </script>
 </html>
