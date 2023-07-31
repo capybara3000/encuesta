@@ -14,138 +14,275 @@
       display: none;
     }
   </style>
-  <body class="text-center">
+  <body class="text-center container">
     <section>
       <h1>Hola</h1>
-        <h2>Bienvenidos a la encuesta</h2>
+      <h2>Bienvenidos a la encuesta</h2>
       <p>
-        <button class="btn btn-dark" onclick="mostrarpreguntasCar()" id="botonEmpezar">Empezar</button>
+        <button
+          class="btn btn-dark"
+          onclick="mostrarpreguntasCar()"
+          id="botonEmpezar"
+        >
+          Empezar
+        </button>
       </p>
     </section>
     <section class="ocultar" id="seccionProyecto">
       <h2>Proyectos</h2>
-      <p>
-      </p>
+      <p></p>
       <form>
-        <div>
-          te parece conveniente que los proyectos se evaluen en 25 puntos en
-          todas las materias ?
-          Si <input type="radio" name="question1" value="0" />
-          No <input type="radio" name="question1" value="1" /> 
-          Debería valer menos <input type="radio" name="question1" value="2" /> 
+        <div class="card">
+          <div class="card-header fw-bold" style="background-color: #9381FF;">
+            te parece conveniente que los proyectos se evaluen en 25 puntos en
+            todas las materias ?
+          </div>
+          <div class="card-body">
+            Si <input type="radio" name="question1" value="0" style="accent-color: #9381FF;" />
+            <br />
+            No <input type="radio" name="question1" value="1" style="accent-color: #9381FF;" />
+            <br />
+            Debería valer menos
+            <input type="radio" name="question1" value="2" style="accent-color: #9381FF;" />
+          </div>
         </div>
-        <div>
-          te gusta la idea de los proyectos ?
-          Si <input type="radio" name="question2" value="0" /> 
-          No <input type="radio" name="question2" value="1" /> 
-          Talvez <input type="radio" name="question2" value="2" /> 
+
+        <div class="card">
+          <div class="card-header fw-bold" style="background-color: #9381FF ;">te gusta la idea de los proyectos ?</div>
+          <div class="card-body">
+            Si <input type="radio" name="question2" value="0" style="accent-color: #9381FF;"  />
+            <br />
+            No <input type="radio" name="question2" value="1" style="accent-color: #9381FF;"  />
+            <br />
+            Talvez <input type="radio" name="question2" value="2" style="accent-color: #9381FF;" />
+          </div>
         </div>
-        <div>
-          crees que los proyectos son una ventaja o desventaja ?
-          ventaja<input type="radio" name="question3" value="0" /> 
-          desventaja <input type="radio" name="question3" value="1" /> 
-          No quiero opinar <input type="radio" name="question3" value="2" />
+
+        <div class="card">
+          <div class="card-header fw-bold" style="background-color: #9381FF ;" >
+            crees que los proyectos son una ventaja o desventaja ?
+          </div>
+          <div class="card-body">
+            ventaja<input type="radio" name="question3" value="0"  style="accent-color: #9381FF;"  />
+            <br />
+            desventaja <input type="radio" name="question3" value="1"  style="accent-color: #9381FF;"  />
+            <br />
+            No quiero opinar <input type="radio" name="question3" value="2"  style="accent-color: #9381FF;" />
+          </div>
         </div>
-        <div>
-          te gustaria que los proyectos se sigan implementando ?
-          Si <input
-            type="radio"
-            name="question4"
-            value="0"
-          />
-          No <input type="radio" name="question4" value="1" /> 
-          talvez <input type="radio" name="question4" value="2" /> 
+
+        <div class="card">
+          <div class="card-header fw-bold" style="background-color: #9381FF ;" >
+            te gustaria que los proyectos se sigan implementando ?
+          </div>
+          <div class="card-body">
+            Si <input type="radio" name="question4" value="0" style="accent-color: #9381FF;"/> 
+            <br>
+            No
+            <input type="radio" name="question4" value="1" style="accent-color: #9381FF;"/>
+            <br>
+             talvez
+            <input type="radio" name="question4" value="2" style="accent-color: #9381FF;" />
+          </div>
         </div>
 
         <div>
           <div id="error"></div>
         </div>
       </form>
-      <button class="btn btn-dark" onclick="mostrarpreguntasCar()" id="rotacion">Siguiente</button>
+      <button
+        class="btn btn-dark"
+        onclick="mostrarpreguntasCar()"
+        id="rotacion"
+      >
+        Siguiente
+      </button>
     </section>
     <section class="ocultar" id="seccionClases">
       <h2>Clase - Tareas</h2>
       <form>
-        <div>
-          Las enseñanzas que te brindan en las clases crees que seran utiles para tu dia a dia? Si<input type="radio" name="question5" value="0" /> 
-         No <input type="radio" name="question5" value="1" /> 
-         Tal vez<input type="radio" name="question5" value="2" /> 
+        <div class="card">
+          <div class="card-header">
+            Las enseñanzas que te brindan en las clases crees que seran utiles
+            para tu dia a dia?
+          </div>
+          <div class="card-body">
+            Si<input type="radio" name="question5" value="0" />
+            <br />
+            No <input type="radio" name="question5" value="1" />
+            <br />
+            Tal vez<input type="radio" name="question5" value="2" />
+          </div>
         </div>
-        <div>
-          Consideras que estas recibiendo la preparacion necesaria en caso de querer seguir en la universidad?
-          Si <input type="radio" name="question6" value="0" /> 
-          No <input type="radio" name="question6" value="1" /> 
-          Tal vez <input type="radio" name="question6" value="2" /> 
+
+        <div class="card">
+          <div class="card-header">
+            Consideras que estas recibiendo la preparacion necesaria en caso de
+            querer seguir en la universidad?
+          </div>
+          <div class="card-body">
+            Si <input type="radio" name="question6" value="0" />
+            <br />
+            No <input type="radio" name="question6" value="1" />
+            <br />
+            Tal vez <input type="radio" name="question6" value="2" />
+          </div>
         </div>
-        <div>
-           Te gustaria que agregaran mas contenido a las tareas?
-          Si <input type="radio" name="question7" value="0" /> 
-          No <input type="radio" name="question7" value="1" /> 
-          No quiero opinar <input type="radio" name="question7" value="2" />
+
+        <div class="card">
+          <div class="card-header">
+            Te gustaria que agregaran mas contenido a las tareas?
+          </div>
+          <div class="card-body">
+            Si <input type="radio" name="question7" value="0" />
+            <br />
+            No quiero opinar <input type="radio" name="question7" value="2" />
+          </div>
         </div>
-        <div>
-          Consideras que la metodologia que se emplea en el patojismo es funcional para tu aprendizaje?
-           Si <input type="radio" name="question8" value="0" /> 
-           No <input type="radio" name="question8" value="1" /> 
-           Tal vez <input type="radio" name="question8" value="2" />
+
+        <div class="card">
+          <div class="card-header">
+            Consideras que la metodologia que se emplea en el patojismo es
+            funcional para tu aprendizaje?
+          </div>
+          <div class="card-body">
+            Si <input type="radio" name="question8" value="0" />
+            <br />
+            No <input type="radio" name="question8" value="1" />
+            <br />
+            Tal vez <input type="radio" name="question8" value="2" />
+          </div>
         </div>
-        <div>
-          Crees que tendrian que haber mas materias?
-           Si<input type="radio" name="question9" value="0" /> 
-           No <input type="radio" name="question9" value="1" /> 
-           Tal vez <input type="radio" name="question9" value="2" />
+
+        <div class="card">
+          <div class="card-header">
+            Crees que tendrian que haber mas materias?
+          </div>
+          <div class="card-body">
+            Si<input type="radio" name="question9" value="0" />
+            <br />
+            No <input type="radio" name="question9" value="1" />
+            <br />
+            Tal vez <input type="radio" name="question9" value="2" />
+          </div>
         </div>
-        <div>
-           Que crees sobre la cantidad de tareas que dejan?<input
-            type="radio"
-            name="question10"
-            value="0"
-          />
-          Son demasiadas <input type="radio" name="question10" value="1" /> Son muy pocas
-          <input type="radio" name="question10" value="2" /> Estan bien 
+
+        <div class="card">
+          <div class="card-header">
+            Que crees sobre la cantidad de tareas que dejan?
+            <div class="card-body">
+              <input type="radio" name="question10" value="0" />
+              <br />
+              Son demasiadas
+              <input type="radio" name="question10" value="1" /> Son muy pocas
+              <br />
+              <input type="radio" name="question10" value="2" /> Estan bien
+            </div>
+          </div>
         </div>
 
         <div>
           <div id="error"></div>
         </div>
       </form>
-      <button class="btn btn-dark" onclick="mostrarpreguntasCar()" id="rotacion">Siguiente</button>
+      <button
+        class="btn btn-dark"
+        onclick="mostrarpreguntasCar()"
+        id="rotacion"
+      >
+        Siguiente
+      </button>
     </section>
     <section class="ocultar" id="seccionProfesores">
       <h2>Profesores</h2>
       <form>
-        <div>
-           Crees que los profesores llegan a tener favoritismo hacia ciertos alumnos? Si<input type="radio" name="question11" value="0" /> 
-           No <input type="radio" name="question11" value="1" /> 
-           Tal vez<input type="radio" name="question11" value="2"/>   
+        
+        <div class="card">
+          <div class="card-header">
+            Crees que los profesores llegan a tener favoritismo hacia ciertos
+            alumnos? 
+          </div>
+          <div class="card-body">
+            Si<input type="radio" name="question11" value="0" />
+            <br>
+             No
+            <input type="radio" name="question11" value="1" />
+            <br>
+             Tal vez<input
+              type="radio"
+              name="question11"
+              value="2"
+            />
+          </div>
         </div>
-        <div>
-          Te gusta la metodologia que utilizan los maestros?
-          Si <input type="radio" name="question12" value="0" /> 
-          No <input type="radio" name="question12" value="1" /> 
-         Solo de algunos <input type="radio" name="question12" value="2" /> 
-        </div>
-        <div>
-          Los maestros deberian ser mas estrictos?
-          Si <input type="radio" name="question13" value="0" /> 
-          No <input type="radio" name="question13" value="1" /> 
-           Tal vez <input type="radio" name="question13" value="2" />
-        </div>
-        <div>
-          Crees que los profesores estan capacitados para su clase?
-          Si <input type="radio" name="question14" value="0" /> 
-          No <input type="radio" name="question14" value="1" /> 
-           Tal vez<input type="radio" name="question14" value="2" />
-        </div>
-        <div>
-          Estas de acuerdo con la implementacion de los reportes? Si<input
-            type="radio"
-            name="question15"
-            value="0"
-          />
-          No <input type="radio" name="question15" value="1" /> 
-          Solo para ciertos reglamentos<input type="radio" name="question15" value="2" /> 
-        </div>
+  
+          <div class="card">
+            <div class="card-header">
+              Te gusta la metodologia que utilizan los maestros?
+            </div>
+            <div class="card-body">
+              Si
+              <input type="radio" name="question12" value="0" />
+              <br> No
+              <input type="radio" name="question12" value="1" />
+              <br> Solo de algunos
+              <input type="radio" name="question12" value="2" />
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="card-header">
+              Los maestros deberian ser mas estrictos? 
+              <div>
+                Si
+                <input type="radio" name="question13" value="0" />
+                <br>
+                No
+                <input type="radio" name="question13" value="1" /> 
+                <br>
+                Tal vez
+                <input type="radio" name="question13" value="2" />
+              </div>
+            </div>
+          </div>
+       
+          <div class="card">
+            <div class="card-header">
+              Crees que los profesores estan capacitados para su clase?
+            </div>
+            <div class="card-body">
+              Si
+              <input type="radio" name="question14" value="0" />
+              <br>
+               No
+              <input type="radio" name="question14" value="1" /> 
+              <br>
+              Tal vez<input
+                type="radio"
+                name="question14"
+                value="2"
+              />
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              Estas de acuerdo con la implementacion de los reportes?
+            </div>
+            <div class="card-body">
+              Si<input
+              type="radio"
+              name="question15"
+              value="0"
+            />
+            <br>
+            No <input type="radio" name="question15" value="1" />
+            <br> Solo para
+            ciertos reglamentos<input type="radio" name="question15" value="2" />
+            </div>
+          </div>
+       
+      
 
         <div>
           <div id="error"></div>
@@ -160,29 +297,33 @@
     <button onclick="traerEncuesta()">traer datos</button>
 
     <div id="tablita"></div>
-
   </body>
   <script>
-    let resultadoDeLaEncuesta =  async ()=> {
+    let resultadoDeLaEncuesta = async () => {
       const response = await fetch(
         "https://backendencuesta.onrender.com/answers/"
       );
       const resultadoDeLaEncuesta = await response.json();
-      console.log(resultadoDeLaEncuesta)
-    }
-    let globalIndex = 0
-    let indexPages = ['Proyecto', 'Clases', 'Profesores']
+      console.log(resultadoDeLaEncuesta);
+    };
+    let globalIndex = 0;
+    let indexPages = ["Proyecto", "Clases", "Profesores"];
 
     let mostrarpreguntasCar = () => {
-      if(globalIndex > 0){
-        document.getElementById("seccion" + indexPages[globalIndex-1]).classList.add("ocultar");
-        document.getElementById("seccion" + indexPages[globalIndex]).classList.remove("ocultar");
+      if (globalIndex > 0) {
+        document
+          .getElementById("seccion" + indexPages[globalIndex - 1])
+          .classList.add("ocultar");
+        document
+          .getElementById("seccion" + indexPages[globalIndex])
+          .classList.remove("ocultar");
+      } else {
+        document
+          .getElementById("seccion" + indexPages[globalIndex])
+          .classList.remove("ocultar");
+        document.getElementById("botonEmpezar").classList.add("ocultar");
       }
-      else{
-        document.getElementById("seccion" + indexPages[globalIndex]).classList.remove("ocultar");
-        document.getElementById('botonEmpezar').classList.add('ocultar')
-      }
-      globalIndex = globalIndex +1
+      globalIndex = globalIndex + 1;
     };
 
     // Creamos el evento click del boton
@@ -208,11 +349,11 @@
     /**
      * Funcion que se ejecuta cada vez que se pulsa sobre el boton "enviar"
      */
-    async function enviar (e) {
+    async function enviar(e) {
       // cancelamos el evento para que no continue
       e.preventDefault();
-      console.log('enviamos datos el enviar')
-      
+      console.log("enviamos datos el enviar");
+
       // obtenemos todos los radio seleccionados
       var preguntas = document.querySelectorAll("input[type=radio]:checked");
 
@@ -229,31 +370,33 @@
           // desmarcamos el check
           pregunta.checked = false;
         });
-        for(let i = 1; i<= totalPreguntas; i++){
-          resultadoEncuesta['question'+i] = String( resultadoEncuesta['question'+i].indexOf(1))
+        for (let i = 1; i <= totalPreguntas; i++) {
+          resultadoEncuesta["question" + i] = String(
+            resultadoEncuesta["question" + i].indexOf(1)
+          );
         }
         console.log(resultadoEncuesta);
-        
-        let data = JSON.stringify(resultadoEncuesta);
-        console.log('data') 
-        console.log(data)
 
-        const response = await fetch("https://backendencuesta.onrender.com/answers/",
-        {
-          headers: {"Content-Type":"application/json"},
-          method:"POST",
-          body:data,
-        } 
+        let data = JSON.stringify(resultadoEncuesta);
+        console.log("data");
+        console.log(data);
+
+        const response = await fetch(
+          "https://backendencuesta.onrender.com/answers/",
+          {
+            headers: { "Content-Type": "application/json" },
+            method: "POST",
+            body: data,
+          }
         );
         const movies = await response.json();
         console.log(movies);
-        
+
         //mostrarResultado();
       } else {
         document.getElementById("error").innerHTML =
           "Selecciona todos los valores";
       }
-
     }
 
     /**
@@ -261,10 +404,9 @@
      */
     function inicializarArrayResultados() {
       for (var i = 1; i <= totalPreguntas; i++) {
-        resultadoEncuesta["question" + i] = [0,  0, 0];
+        resultadoEncuesta["question" + i] = [0, 0, 0];
       }
     }
-
 
     // /**
     //  * Simple funcion que muestra los resultados en cada votacion
@@ -288,16 +430,15 @@
     //   document.getElementById("resultado").innerHTML = resultado;
     // }
 
-     
-      traerEncuesta = async () => {
-        const response = await fetch(
-          "https://backendencuesta.onrender.com/resultados/"
-        );
-        resultadoDeLaEncuesta = await response.json();
-        console.log(resultadoDeLaEncuesta);
+    traerEncuesta = async () => {
+      const response = await fetch(
+        "https://backendencuesta.onrender.com/resultados/"
+      );
+      resultadoDeLaEncuesta = await response.json();
+      console.log(resultadoDeLaEncuesta);
 
-        document.getElementById("tablita").innerHTML = "<p>"+ JSON.stringify(resultadoDeLaEncuesta) + "</p>"
-      };
-
+      document.getElementById("tablita").innerHTML =
+        "<p>" + JSON.stringify(resultadoDeLaEncuesta) + "</p>";
+    };
   </script>
 </html>
