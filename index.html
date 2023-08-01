@@ -13,12 +13,44 @@
     .ocultar {
       display: none;
     }
+    .botontraerdatos:hover{
+      background-color: #f7e2ac !important;
+      border-color: #f7e2ac !important;
+    }
+
   </style>
-  <body class="text-center container">
-    <section>
-      <h1>Hola</h1>
-      <h2>Bienvenidos a la encuesta</h2>
-      <p>
+
+  <body>
+    
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#" >Hola, Bienvenidos a la encuesta </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <button
+          class="btn "
+          onclick="mostrarpreguntasCar()"
+          id="rotacion"
+        >
+          > 
+        </button>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            creado por:
+            Jennifer Lopez 🐻‍❄️ Britany Perez 🐝
+          </span>
+        </div>
+      </div>
+    </nav>
+    <section class="text-center container">
+
         <button
           class="btn btn-dark"
           onclick="mostrarpreguntasCar()"
@@ -28,7 +60,7 @@
         </button>
       </p>
     </section>
-    <section class="ocultar" id="seccionProyecto">
+    <section class="ocultar text-center container" id="seccionProyecto">
       <h2>Proyectos</h2>
       <p></p>
       <form>
@@ -91,15 +123,9 @@
           <div id="error"></div>
         </div>
       </form>
-      <button
-        class="btn btn-dark"
-        onclick="mostrarpreguntasCar()"
-        id="rotacion"
-      >
-        Siguiente
-      </button>
+     
     </section>
-    <section class="ocultar" id="seccionClases">
+    <section class="ocultar text-center container" id="seccionClases">
       <h2>Clase - Tareas</h2>
       <form>
         <div class="card">
@@ -189,100 +215,92 @@
           <div id="error"></div>
         </div>
       </form>
-      <button
-        class="btn btn-dark"
-        onclick="mostrarpreguntasCar()"
-        id="rotacion"
-      >
-        Siguiente
-      </button>
+
     </section>
-    <section class="ocultar" id="seccionProfesores">
+    <section class="ocultar text-center container" id="seccionProfesores">
       <h2>Profesores</h2>
       <form>
         
         <div class="card">
-          <div class="card-header">
+          <div class="card-header fw-bold" style="background-color: #9DF7E5;">
             Crees que los profesores llegan a tener favoritismo hacia ciertos
             alumnos? 
           </div>
           <div class="card-body">
-            Si<input type="radio" name="question11" value="0" />
+            Si<input type="radio" name="question11" value="0" style="accent-color: #9DF7E5;" />
             <br>
              No
-            <input type="radio" name="question11" value="1" />
+            <input type="radio" name="question11" value="1"  style="accent-color: #9DF7E5;"/>
             <br>
              Tal vez<input
               type="radio"
               name="question11"
-              value="2"
+              value="2" style="accent-color: #9DF7E5;"
             />
           </div>
         </div>
         <br>
           <div class="card">
-            <div class="card-header">
+            <div class="card-header fw-bold" style="background-color: #9DF7E5;">
               Te gusta la metodologia que utilizan los maestros?
             </div>
             <div class="card-body">
               Si
-              <input type="radio" name="question12" value="0" />
+              <input type="radio" name="question12" value="0" style="accent-color: #9DF7E5;"/>
               <br> No
-              <input type="radio" name="question12" value="1" />
+              <input type="radio" name="question12" value="1" style="accent-color: #9DF7E5;"/>
               <br> Solo de algunos
-              <input type="radio" name="question12" value="2" />
+              <input type="radio" name="question12" value="2" style="accent-color: #9DF7E5;" />
             </div>
           </div>
           <br>
           <div class="card">
-            <div class="card-header">
+            <div class="card-header fw-bold" style="background-color: #9DF7E5;">
               Los maestros deberian ser mas estrictos? 
-              <div>
-                Si
-                <input type="radio" name="question13" value="0" />
+            </div>
+              <div class="card-body"> 
+                Si <input type="radio" name="question13" value="0" style=" accent-color: #9DF7E5;" />
                 <br>
-                No
-                <input type="radio" name="question13" value="1" /> 
+                No <input type="radio" name="question13" value="1" style="accent-color: #9DF7E5;" /> 
                 <br>
-                Tal vez
-                <input type="radio" name="question13" value="2" />
+                Tal vez <input type="radio" name="question13" value="2"  style="accent-color:#9DF7E5 ;"/>
               </div>
             </div>
           </div>
           <br>
           <div class="card">
-            <div class="card-header">
+            <div class="card-header fw-bold" style="background-color: #9DF7E5;">
               Crees que los profesores estan capacitados para su clase?
             </div>
             <div class="card-body">
               Si
-              <input type="radio" name="question14" value="0" />
+              <input type="radio" name="question14" value="0" style="accent-color: #9DF7E5;" />
               <br>
                No
-              <input type="radio" name="question14" value="1" /> 
+              <input type="radio" name="question14" value="1" style="accent-color: #9DF7E5;"/> 
               <br>
               Tal vez<input
                 type="radio"
                 name="question14"
-                value="2"
+                value="2" style="accent-color: #9DF7E5;"
               />
             </div>
           </div>
           <br>
           <div class="card">
-            <div class="card-header">
+            <div class="card-header fw-bold" style="background-color: #9DF7E5;">
               Estas de acuerdo con la implementacion de los reportes?
             </div>
             <div class="card-body">
               Si<input
               type="radio"
               name="question15"
-              value="0"
+              value="0" style="accent-color: #9DF7E5;"
             />
             <br>
-            No <input type="radio" name="question15" value="1" />
+            No <input type="radio" name="question15" value="1"  style="accent-color: #9DF7E5;"/>
             <br> Solo para
-            ciertos reglamentos<input type="radio" name="question15" value="2" />
+            ciertos reglamentos<input type="radio" name="question15" value="2" style="accent-color: #9DF7E5;"/>
             </div>
           </div>
        
@@ -298,7 +316,10 @@
       <div id="resultado"></div>
     </section>
 
-    <button onclick="traerEncuesta()">traer datos</button>
+    <div class="text-center">
+      <button onclick="traerEncuesta()"  class="btn btn-info botontraerdatos" style="background-color: #F4E4BA; border-color: #F4E4BA;">traer datos</button>
+    </div>
+
 
     <div id="tablita"></div>
   </body>
